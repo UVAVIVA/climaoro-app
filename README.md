@@ -1,103 +1,78 @@
 # CLIMAORO App
+**L'interfaccia mobile nativa per la gestione diretta e centralizzata del riscaldamento.**
 
-App Flutter per la gestione della climatizzazione centralizzata CLIMAORO.
+---
 
-## Storia
+## Links
 
-CLIMAORO nasce come sistema di climatizzazione centralizzata per apartamenti multiproprieta'. Inizialmente l'interfaccia era integrata in Home Assistant. Questa app Flutter la sostituisce completamente, offrendo un'esperienza nativa su Android.
+- **Sito web:** [https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)
+- **Progetto principale:** [https://github.com/UVAVIVA/CLIMAORO](https://github.com/UVAVIVA/CLIMAORO)
+- **Codice sorgente:** [https://github.com/UVAVIVA/climaoro-app](https://github.com/UVAVIVA/climaoro-app)
 
-L'app si collega direttamente ai termostati ESPHome (via HTTP) e al motore decisionale ESP32-S3 (via API REST), senza bisogno di Home Assistant.
+---
 
-## Funzionalita'
+## La Visione
 
-### Schermata Principale
-- Lista di tutti i termostati con temperatura, umidita', modalita' e stato
-- Indicatore online/offline per ciascun dispositivo
-- Aggiunta/rimozione dispositivi
+Nelle prime versioni di CLIMAORO, l'unico modo per interagire con il sistema era rappresentato dalle dashboard di Home Assistant. Sebbene complete, le schermate risultavano affollate, complesse da navigare da smartphone e prive dell'immediata reattività richiesta nell'uso quotidiano.
 
-### Termostato
-- Controllo modalita' (OFF / HEAT / COOL / AUTO / DRY / FAN_ONLY)
-- Controllo ventola (ON/OFF, modalita' auto)
-- Impostazione target temperature (high/low)
-- Lettura sensori in tempo reale
+Il riscaldamento incide per il 60-70% sui consumi energetici di un'abitazione: merita un'interfaccia dedicata, essenziale ed efficace.
 
-### Collettore
-- Gestione valvole multiple
-- Stato valvole on/off
+**CLIMAORO App** nasce con un obiettivo preciso: eliminare la dipendenza da server centrali o interfacce generiche per offrire un controllo immediato direttamente da telefono. L'applicazione dialoga via Wi-Fi locale direttamente con i termostati ESPHome e con il motore C, garantendo un'esperienza rapida, pulita e sempre disponibile.
 
-### ClimaOro (Centralizzato)
-- Gestione appartamenti, gruppi e stanze
-- Calendario 7x24 (COMFORT / ECO / AUTONOMO)
-- Pesi stanze e soglia gruppi
-- Delta accensione/spegnimento per comfort/eco
-- Toggle master (attiva/disattiva il motore)
+---
 
-### Automazioni
-- Regole basate su temperatura, ora, giorno
-- Azioni: accendi/spegni, cambia modalita', imposta temperatura
-- Notifiche push
+## Struttura dell'Applicazione
 
-### Configurazione Motore
-- IP del motore ESP32-S3 (configurabile a runtime)
-- Stato motore (master on/off, uptime, SNTP sync)
-- Endpoint `/api/config/reset` per emergenze
+L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni:
 
-## Installazione
+| Schermata | Descrizione |
+| --- | --- |
+| **Dashboard Generale** | Panoramica sintetica di tutti i termostati di casa: temperatura corrente, umidità relativa, stato operativo (accesso/spento) e stato di connettività in tempo reale. |
+| **Controllo Singolo Termostato** | Gestione puntuale della singola stanza: cambio setpoint, accensione/spegnimento e selezione modalità HVAC (*Caldo*, *Fresco*, *Automatico*, *Deumidificazione*, *Ventilazione*). |
+| **Pannello ClimaOro** | Il centro di controllo dell'algoritmo: gestione appartamenti, aggregazione stanze in gruppi, definizione dei pesi e matrice oraria settimanale (*Comfort*, *Eco*, *Autonomo*), oltre al selettore Master. |
+| **Automazioni & Notifiche** | Configurazione di regole condizionali locali (es. attivazione al di sotto di soglie critiche) e ricezione di notifiche push sugli eventi di sistema. |
 
-### Da APK (consigliato)
+---
 
-1. Scarica l'APK piu' recente dalla cartella `releases/`
-2. Installa sul telefono Android (attiva "Fonti sconosciute" se necessario)
-3. All'avvio, l'app chiede l'IP del motore (se configurato)
+## Scelte Tecnologiche
 
-### Da sorgente
+- **Flutter Framework**: Codice sorgente unificato per un'esperienza d'uso fluida, nativa e performante su dispositivi mobili.
+- **Comunicazione REST / HTTP Diretta**: L'applicazione sfrutta i web server nativi dei singoli ESPHome e le API REST del motore C. Nessun protocollo esotico o middleware intermedio.
+- **Operatività Standalone**: Se il motore centralizzato non è configurato o temporaneamente irraggiungibile, l'app continua a interagire direttamente con i singoli termostati senza bloccare l'impianto.
 
-```bash
-flutter pub get
-flutter build apk --release
-```
+---
 
-L'APK sara' in `build/app/outputs/flutter-apk/app-release.apk`.
+## Foto
 
-## Configurazione
+*(Sezione in preparazione — screenshot dell'app e foto del sistema in funzione)*
 
-### IP Motore
-L'IP del motore si configura dalla schermata "Configurazione" nell'app. Non e' necessario ricompilare.
+---
 
-### Dispositivi
-I dispositivi (termostati) si aggiungono/rimuovono dall'app. L'elenco nel motore e' separato (hardcoded nel firmware `devices.c`).
+## Installazione e Avvio
 
-## Architettura
+1. **Installazione**: Distribuzione diretta tramite pacchetto **APK** (abilitando l'installazione da sorgenti sconosciute sul dispositivo Android se richiesto).
+2. **Prima Configurazione**: Al primo avvio viene richiesto l'indirizzo IP del motore CLIMAORO. Il parametro può essere inserito subito o configurato successivamente all'interno del menu *Impostazioni*.
 
-```
-App Flutter (questa)
-       │
-       ├── HTTP ──> Termostati ESPHome (diretto)
-       │
-       └── HTTP ──> Motore ESP32-S3 (API REST)
-                      │
-                      └── HTTP ──> Termostati ESPHome (ciclo 60s)
-```
+---
 
-L'app puo' controllare i termostati direttamente (quando il motore e' offline) o tramite il motore (quando e' attivo).
+## Licenza e Responsabilità
 
-## Prerequisiti
+**CLIMAORO © 2026 by UVAVIVA** · Licenza: **MIT con Condizione di Attribuzione**
 
-- Flutter SDK ^3.13.1
-- Android SDK
-- Termostati ESPHome funzionanti nella stessa rete
-- (Opzionale) Motore ESP32-S3 con questo firmware
+**Termini**
+- ✅ Attribuzione richiesta (nel codice e sui dispositivi commerciali)
+- ✅ Uso commerciale permesso (con attribuzione)
+- ✅ Modifiche e derivati permessi
+- ✅ Uso, copia, distribuzione e vendita permessi
 
-## Dipendenze principali
+**Disclaimer**
+Questo progetto è fornito **così com'è**, a scopo educativo e sperimentale.
+- ⚠️ Non certificato per uso produttivo
+- ⚠️ Nessuna garanzia di alcun tipo
+- ⚠️ L'utente si assume ogni rischio relativo all'uso del software e al rispetto delle normative locali
 
-- `http` - Client HTTP per comunicazione con termostati e motore
-- `shared_preferences` - Persistenza locale (IP motore, dispositivi)
-- `flutter_local_notifications` - Notifiche push per automazioni
+**Sviluppato da:** [UVAVIVA](https://github.com/UVAVIVA)
 
-## Licenza
+---
 
-MIT con Condizione di Attribuzione - vedi `LICENSE` e `ATTRIBUZIONE.md`.
-
-## Autore
-
-UVAVIVA - https://github.com/UVAVIVA
+**Costruito con passione, dal nulla.**
