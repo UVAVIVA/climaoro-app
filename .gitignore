@@ -1,0 +1,54 @@
+# Dart/Flutter
+.dart_tool/
+.packages
+build/
+.pub-cache/
+.pub/
+pubspec.lock
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace/xcshareddata/
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+
+# Web
+web/favicon.png
+web/icons/
+web/manifest.json
+
+# macOS
+macos/Pods/
+macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Platform build
+*.iml
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+*.apk
+*.aab
+*.ipa
+
+# Exceptions - keep versioned APKs
+!climaoro_app/v*.apk
