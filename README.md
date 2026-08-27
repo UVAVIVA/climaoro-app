@@ -44,7 +44,9 @@ L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni
 
 ## Foto
 
-*(Sezione in preparazione — screenshot dell'app e foto del sistema in funzione)*
+<img src="images/00b52f18-fcd2-4f22-bc78-fc6dbafb9023.jpg" alt="CLIMAORO App 1" width="30%"> <img src="images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg" alt="CLIMAORO App 2" width="30%">
+
+<img src="images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg" alt="CLIMAORO App 3" width="30%"> <img src="images/a965ce88-6679-4776-bdce-42e957b538df.jpg" alt="CLIMAORO App 4" width="30%">
 
 ---
 
