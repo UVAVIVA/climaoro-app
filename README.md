@@ -32,6 +32,8 @@ L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni
 | **Pannello ClimaOro** | Il centro di controllo dell'algoritmo: gestione appartamenti, aggregazione stanze in gruppi, definizione dei pesi e matrice oraria settimanale (*Comfort*, *Eco*, *Autonomo*), oltre al selettore Master. |
 | **Automazioni & Notifiche** | Configurazione di regole condizionali locali (es. attivazione al di sotto di soglie critiche) e ricezione di notifiche push sugli eventi di sistema. |
 
+<img src="images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg" alt="CLIMAORO App 2" width="30%"> <img src="images/a965ce88-6679-4776-bdce-42e957b538df.jpg" alt="CLIMAORO App 4" width="30%">
+
 ---
 
 ## Scelte Tecnologiche
@@ -40,13 +42,7 @@ L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni
 - **Comunicazione REST / HTTP Diretta**: L'applicazione sfrutta i web server nativi dei singoli ESPHome e le API REST del motore C. Nessun protocollo esotico o middleware intermedio.
 - **Operatività Standalone**: Se il motore centralizzato non è configurato o temporaneamente irraggiungibile, l'app continua a interagire direttamente con i singoli termostati senza bloccare l'impianto.
 
----
-
-## Foto
-
-<img src="images/00b52f18-fcd2-4f22-bc78-fc6dbafb9023.jpg" alt="CLIMAORO App 1" width="30%"> <img src="images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg" alt="CLIMAORO App 2" width="30%">
-
-<img src="images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg" alt="CLIMAORO App 3" width="30%"> <img src="images/a965ce88-6679-4776-bdce-42e957b538df.jpg" alt="CLIMAORO App 4" width="30%">
+<img src="images/00b52f18-fcd2-4f22-bc78-fc6dbafb9023.jpg" alt="CLIMAORO App 1" width="30%"> <img src="images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg" alt="CLIMAORO App 3" width="30%">
 
 ---
 
