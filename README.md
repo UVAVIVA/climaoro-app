@@ -7,7 +7,7 @@
 
 - **Sito web:** [https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)
 - **Progetto principale:** [https://github.com/UVAVIVA/CLIMAORO](https://github.com/UVAVIVA/CLIMAORO)
-- **Codice sorgente:** [https://github.com/UVAVIVA/climaoro-app](https://github.com/UVAVIVA/climaoro-app)
+- **Istruzioni di installazione:** [https://github.com/UVAVIVA/climaoro-app/blob/main/ISTRUZIONI.md](https://github.com/UVAVIVA/climaoro-app/blob/main/ISTRUZIONI.md)
 
 ---
 
