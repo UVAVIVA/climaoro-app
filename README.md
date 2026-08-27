@@ -7,6 +7,7 @@
 
 - **Sito web:** [https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)
 - **Progetto principale:** [https://github.com/UVAVIVA/CLIMAORO](https://github.com/UVAVIVA/CLIMAORO)
+- **Codice sorgente:** [https://github.com/UVAVIVA/climaoro-app](https://github.com/UVAVIVA/climaoro-app)
 
 ---
 
@@ -17,15 +18,6 @@ Nelle prime versioni di CLIMAORO, l'unico modo per interagire con il sistema era
 Il riscaldamento incide per il 60-70% sui consumi energetici di un'abitazione: merita un'interfaccia dedicata, essenziale ed efficace.
 
 **CLIMAORO App** nasce con un obiettivo preciso: eliminare la dipendenza da server centrali o interfacce generiche per offrire un controllo immediato direttamente da telefono. L'applicazione dialoga via Wi-Fi locale direttamente con i termostati ESPHome e con il motore C, garantendo un'esperienza rapida, pulita e sempre disponibile.
-
----
-
-## Foto
-
-[![App 1](images/00b52f18-fcd2-4f22-bc78-fc6dbafb9023.jpg)](images/00b52f18-fcd2-4f22-bc78-fc6dbafb9023.jpg)
-[![App 2](images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg)](images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg)
-[![App 3](images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg)](images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg)
-[![App 4](images/a965ce88-6679-4776-bdce-42e957b538df.jpg)](images/a965ce88-6679-4776-bdce-42e957b538df.jpg)
 
 ---
 
@@ -50,26 +42,16 @@ L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni
 
 ---
 
+## Foto
+
+*(Sezione in preparazione — screenshot dell'app e foto del sistema in funzione)*
+
+---
+
 ## Installazione e Avvio
 
-### Da APK (consigliato)
-
-1. Scarica l'APK più recente dalla cartella `releases/`
-2. Installa sul telefono Android (attiva "Fonti sconosciute" se necessario)
-3. All'avvio, l'app chiede l'IP del motore (se configurato)
-
-### Da sorgente
-
-```bash
-flutter pub get
-flutter build apk --release
-```
-
-L'APK sarà in `build/app/outputs/flutter-apk/app-release.apk`.
-
-### Prima Configurazione
-
-Al primo avvio viene richiesto l'indirizzo IP del motore CLIMAORO. Il parametro può essere inserito subito o configurato successivamente all'interno del menu *Impostazioni*.
+1. **Installazione**: Distribuzione diretta tramite pacchetto **APK** (abilitando l'installazione da sorgenti sconosciute sul dispositivo Android se richiesto).
+2. **Prima Configurazione**: Al primo avvio viene richiesto l'indirizzo IP del motore CLIMAORO. Il parametro può essere inserito subito o configurato successivamente all'interno del menu *Impostazioni*.
 
 ---
 
