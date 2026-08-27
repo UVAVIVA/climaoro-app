@@ -7,7 +7,6 @@
 
 - **Sito web:** [https://UVAVIVA.github.io/CLIMAORO/](https://UVAVIVA.github.io/CLIMAORO/)
 - **Progetto principale:** [https://github.com/UVAVIVA/CLIMAORO](https://github.com/UVAVIVA/CLIMAORO)
-- **Istruzioni di installazione:** [https://github.com/UVAVIVA/climaoro-app/blob/main/ISTRUZIONI.md](https://github.com/UVAVIVA/climaoro-app/blob/main/ISTRUZIONI.md)
 
 ---
 
@@ -48,8 +47,9 @@ L'esperienza utente è organizzata in sezioni focalizzate e prive di distrazioni
 
 ## Installazione e Avvio
 
-1. **Installazione**: Distribuzione diretta tramite pacchetto **APK** (abilitando l'installazione da sorgenti sconosciute sul dispositivo Android se richiesto).
-2. **Prima Configurazione**: Al primo avvio viene richiesto l'indirizzo IP del motore CLIMAORO. Il parametro può essere inserito subito o configurato successivamente all'interno del menu *Impostazioni*.
+1. **Istruzioni di installazione:** [Apri le istruzioni](https://github.com/UVAVIVA/climaoro-app/blob/main/ISTRUZIONI.md)
+2. **Installazione**: Distribuzione diretta tramite pacchetto **APK** (abilitando l'installazione da sorgenti sconosciute sul dispositivo Android se richiesto).
+3. **Prima Configurazione**: Al primo avvio viene richiesto l'indirizzo IP del motore CLIMAORO. In seguito i termostati vanno **inseriti manualmente tramite il loro indirizzo IP**.
 
 ---
 

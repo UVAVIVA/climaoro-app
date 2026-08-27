@@ -9,7 +9,7 @@
 
 ## Installazione dell'App
 
-1. **Scarica l'APK** dell'app CLIMAORO (il file `.apk`)
+1. **Scarica l'APK** dell'app CLIMAORO     [(DOWNLOAD APK ZIP)](https://github.com/UVAVIVA/climaoro-app/raw/main/install.zip)
 2. Apri il file **APK** sul telefono (es. da un messaggio, da email o dal download)
 3. Se il telefono lo chiede, **abilita l'installazione da fonti sconosciute** (il telefono ti guida in questa opzione)
 4. Conferma l'installazione e apri l'app
@@ -23,7 +23,7 @@ Al primo avvio l'app ti chiede l'**indirizzo IP del motore CLIMAORO** (la macchi
 - Inseriscilo subito, oppure
 - Lascialo vuoto e configuralo più tardi dal menu **Impostazioni** dell'app
 
-Una volta collegata al motore, l'app mostra l'elenco dei termostati e ti permette di controllarli da telefono.
+Una volta collegata al motore, i termostati vanno impostati manualmente tramite il loro **indirizzo IP**.
 
 ---
 
