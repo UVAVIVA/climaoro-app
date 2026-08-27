@@ -25,6 +25,8 @@ Al primo avvio l'app ti chiede l'**indirizzo IP del motore CLIMAORO** (la macchi
 
 Una volta collegata al motore, i termostati vanno impostati manualmente tramite il loro **indirizzo IP**.
 
+<img src="images/91745b8e-12b7-4d81-99e9-c87701b7c1f8.jpg" alt="CLIMAORO App 3" width="30%"> <img src="images/48d5ad94-720a-4e18-af88-9c372f740eee.jpg" alt="CLIMAORO App 2" width="30%">
+
 ---
 
 ## Risoluzione Problemi
