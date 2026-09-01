@@ -9,7 +9,7 @@
 
 ## Installazione dell'App
 
-1. **Scarica l'APK** dell'app CLIMAORO     [(DOWNLOAD APK ZIP)](https://github.com/UVAVIVA/climaoro-app/raw/main/ClimaORO_v1.0.0.zip)
+1. **Scarica l'APK** dell'app CLIMAORO     [(DOWNLOAD APK ZIP)](https://github.com/UVAVIVA/climaoro-app/raw/main/ClimaORO_vA.1.1.zip)
 2. Apri il file **APK** sul telefono (es. da un messaggio, da email o dal download)
 3. Se il telefono lo chiede, **abilita l'installazione da fonti sconosciute** (il telefono ti guida in questa opzione)
 4. Conferma l'installazione e apri l'app
